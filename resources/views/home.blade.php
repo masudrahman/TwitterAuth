@@ -40,8 +40,12 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
-
-                <a class="btn btn-info" href="auth/twitter" role="button">Login with Twitter</a>
+                You are logged In
+                <div>
+                    <h4>Your name is {{ Auth::user()->name }}</h4>
+                    <h4>Your twitter handle is {{ Auth:user()->handle}}</h4>
+                    <img src="{{ Auth::user()->avatar }}" height="200" width="200" />
+                </div>
             </div>
         </div>
     </body>
